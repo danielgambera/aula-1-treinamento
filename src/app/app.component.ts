@@ -12,4 +12,16 @@ import { FooterComponent } from "./components/footer/footer.component";
 })
 export class AppComponent {
   title = 'treinamento-angular';
+
+  constructor()
+  {
+  console.log('Iniciando o Construtor')
+  }
+
+  ngOnInit()
+  {
+    console.log('Iniciando o OnInit')
+  }
+
 }
+
