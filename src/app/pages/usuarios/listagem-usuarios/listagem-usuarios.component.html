@@ -11,14 +11,19 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Abel Lebel Muarami Cintra</td>
-        <td>75</td>
-        <td>Ativo</td>
-        <td></td>
-      </tr>
+      @for (usuario of usuarios; track $index) {
+        <tr>
+          <th scope="row">{{usuario.id}}</th>
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.idade}}</td>
+          <td>{{usuario.ativo ? "Ativo" : "Desativado"}}</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm">Remover</button>
+            <button type="button" class="btn btn-secondary btn-sm ms-2">Editar</button>
+          </td>
+        </tr>
+      }
     </tbody>
   </table>
-  <button type="button" class="btn btn-dark">Cadastrar</button>
+  <a class="btn btn-dark" routerLink="/usuarios/cadastrar">Cadastrar</a>
     
