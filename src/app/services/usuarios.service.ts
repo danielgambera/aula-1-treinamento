@@ -7,11 +7,23 @@ import { IUsuario } from '../interfaces/usuario';
 })
 export class UsuariosService {
 
+  api ='http://localhost:3000/usuarios';
+
   constructor(private http: HttpClient) { }
 
   buscarTodosUsuarios()
   {
-    return this.http.get<IUsuario[]>('http://localhost:3000/usuarios');
+    return this.http.get<IUsuario[]>(this.api);
+  }
+
+  cadastrarUsuario(usuario: IUsuario)
+  {
+    return this.http.post(this.api, usuario);
+  }
+
+  removerUsuario(id: number)
+  {
+    return this.http.delete(`${this.api}/${id}`)
   }
 
 }

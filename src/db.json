@@ -1,16 +1,34 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Rafael Ferreira",
       "idade": 19,
       "ativo": true
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Lucas Ferreira",
       "idade": 35,
       "ativo": false
+    },
+    {
+      "id": "4cb6",
+      "nome": "Marco Delurso",
+      "idade": null,
+      "ativo": true
+    },
+    {
+      "id": "217a",
+      "nome": "Fulano de Miro",
+      "idade": 123,
+      "ativo": true
+    },
+    {
+      "id": "8b9c",
+      "nome": "Murano Wartenio",
+      "idade": 33,
+      "ativo": true
     }
   ]
 }
