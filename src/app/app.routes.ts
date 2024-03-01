@@ -8,6 +8,7 @@ import { CadastroProdutosComponent } from './pages/produtos/cadastro-produtos/ca
 export const routes: Routes = [
     { path:'', component: HomeComponent },
     { path:'usuarios/cadastrar', component: CadastroUsuariosComponent },
+    { path:'usuarios/editar/:id', component: CadastroUsuariosComponent },
     { path:'usuarios', component: ListagemUsuariosComponent },
     { path:'produtos/cadastrar', component: CadastroProdutosComponent },
     { path:'produtos', component: ListagemProdutosComponent },
