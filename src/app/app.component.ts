@@ -8,8 +8,22 @@ import { FooterComponent } from "./components/footer/footer.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, FooterComponent]
+    imports: [RouterOutlet
+              , HeaderComponent
+              , FooterComponent]
 })
 export class AppComponent {
   title = 'treinamento-angular';
+
+  constructor()
+  {
+  console.log('Iniciando o Construtor')
+  }
+
+  ngOnInit()
+  {
+    console.log('Iniciando o OnInit')
+  }
+
 }
+
