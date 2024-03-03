@@ -6,7 +6,7 @@ import { PageTitleComponent } from "../../../components/page-title/page-title.co
 import { UsuariosService } from '../../../services/usuarios.service';
 import { IUsuario } from '../../../interfaces/usuario';
 import Swal from 'sweetalert2';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { ActivatedRoute, Router } from '@angular/router';
     standalone: true,
     templateUrl: './cadastro-usuarios.component.html',
     styleUrl: './cadastro-usuarios.component.css',
-    imports: [ReactiveFormsModule, PageTitleComponent]
+    imports: [ReactiveFormsModule, PageTitleComponent, RouterLink]
 })
 
 export class CadastroUsuariosComponent {
