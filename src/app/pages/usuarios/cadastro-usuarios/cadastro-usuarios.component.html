@@ -26,11 +26,12 @@
              </div>
         </div>
     </div>
-    @if (id==0) 
+    @if (usuarioForm.get('id'))
     {
         <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Cadastrar</button>
     }
     @else {
         <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Alterar</button>
      }
+     <a class="btn btn-dark" routerLink="/usuarios" style="margin-left: 10px;">Voltar</a>
 </form>
