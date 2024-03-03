@@ -19,6 +19,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 export class CadastroUsuariosComponent {
 
+  id: any;
   usuarioForm: FormGroup;
 
   constructor(private fb:FormBuilder, 
@@ -33,7 +34,26 @@ export class CadastroUsuariosComponent {
   }
 
   ngOnInit(){
-    const id = this.activatedRoute.snapshot.paramMap.get('id');
+    this.id = this.activatedRoute.snapshot.paramMap.get('id');
+    try
+    {
+      if (this.id)
+      {
+        this.usuarioService.buscarUsuarioPorId(this.id).subscribe(
+          (usuario => {
+            this.usuarioForm.patchValue({
+              nome: usuario.nome,
+              idade: usuario.idade
+            })
+          }));
+      }
+    }
+    catch (error)
+    {
+      console.error(error);
+    }
+
+    
   }
 
   cadastrarUsuario() {
@@ -41,14 +61,17 @@ export class CadastroUsuariosComponent {
     console.log(this.usuarioForm.value);
     const usuario: IUsuario = this.usuarioForm.value;
     usuario.ativo = true;
+    if (this.id)
+    {
+      usuario.id = this.id;
+    }
     this.usuarioService.cadastrarUsuario(usuario).subscribe((result) =>
     {
-      console.log(result);
       Swal.fire({
-        title: "Boa!",
-        text: "Cadastrou mais um.",
-        icon:"success"
-      });
+          title: "Boa!",
+          text: `Usuário ${this.id ? ' editado' : 'cadastrado'}.`,
+          icon:"success"
+        });
       this.router.navigateByUrl('/usuarios');
     },
     (erro) => {
