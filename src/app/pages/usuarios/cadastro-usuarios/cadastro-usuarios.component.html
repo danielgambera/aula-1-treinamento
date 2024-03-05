@@ -1,8 +1,8 @@
-@if (usuarioForm.get('id')) {
-    <my-title title="Cadastrar Usuário"></my-title>
+@if (id) {
+    <my-title title="Editar Usuário"></my-title>
 }
 @else {
-    <my-title title="Editar Usuário"></my-title>
+    <my-title title="Cadastrar Usuário"></my-title>
 }
 
 <hr>
@@ -26,12 +26,12 @@
              </div>
         </div>
     </div>
-    @if (usuarioForm.get('id'))
+    @if (id)
     {
-        <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Cadastrar</button>
+        <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Alterar</button>
     }
     @else {
-        <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Alterar</button>
+        <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Cadastrar</button>
      }
      <a class="btn btn-dark" routerLink="/usuarios" style="margin-left: 10px;">Voltar</a>
 </form>
