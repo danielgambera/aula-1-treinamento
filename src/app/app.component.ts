@@ -2,7 +2,6 @@ import { Component, LOCALE_ID, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
-import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 import { DecimalPipe, registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 
@@ -16,15 +15,11 @@ registerLocaleData(localePt);
     imports: [RouterOutlet
               , HeaderComponent
               , FooterComponent
-              , DecimalPipe
-              , NgxMaskDirective
-              , NgxMaskPipe]
+              , DecimalPipe],
 })
 
 export class AppComponent {
   title = 'avaliacao-angular';
-
-
 
    constructor()
   {
