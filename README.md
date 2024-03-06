@@ -7,7 +7,9 @@ O projeto foi desenvolvido no modo standalone.
 ## Servidor de desenvolvimento
 
 Execute `npm run server` para rodar o backend. Ficarão ativos dois endpoints:
+
         http://localhost:3000/usuarios
+        
         http://localhost:3000/produtos
         
 Execute `ng serve` para rodar o frontend. O endereço é: 
