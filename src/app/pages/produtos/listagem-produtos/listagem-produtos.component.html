@@ -1,7 +1,7 @@
 <my-title title="Produtos"></my-title>
 <hr>
 <table class="table">
-    <thead class="table-dark">
+    <thead class="table-secondary">
       <tr>
         <th scope="col">Id</th>
         <th scope="col">Nome Produto</th>
@@ -22,7 +22,7 @@
           <td style="text-align: right; padding-right: 40px;"  class="number">{{produto.preco | currency}}</td>
           <td>{{produto.ativo ? "Ativo" : "Desativado"}}</td>
           <td>
-            <button type="button" class="btn btn-danger btn-sm" (click)="removerProduto(produto.id || 0)">Remover</button>
+            <button type="button" class="btn btn-warning btn-sm" (click)="removerProduto(produto.id || 0)">Remover</button>
             <a [routerLink]="'/produtos/editar/' + produto.id"  
                 class="btn btn-secondary btn-sm ms-2">Editar</a>
           </td>
@@ -30,4 +30,4 @@
       }
     </tbody>
   </table>
-  <a class="btn btn-dark" routerLink="/produtos/cadastrar">Cadastrar</a>
+  <a class="btn btn-secondary" routerLink="/produtos/cadastrar">Cadastrar</a>

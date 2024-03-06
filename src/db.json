@@ -16,7 +16,13 @@
       "nome": "Apolônio Norberto de Campos Limas",
       "idade": 3,
       "ativo": true,
-      "id": "1547"
+      "id": "3"
+    },
+    {
+      "nome": "Gilgamesh Urbano Dantes d'Agora",
+      "idade": 54,
+      "ativo": true,
+      "id": "1927"
     }
   ],
   "produtos": [
@@ -24,7 +30,7 @@
       "nomeProduto": "iPhone 13.5",
       "codigoBarras": "5012345678900",
       "quantidade": 5,
-      "preco": 5000,
+      "preco": 5000.45,
       "ativo": true,
       "id": "1"
     },
@@ -34,7 +40,7 @@
       "quantidade": 200,
       "preco": 17000,
       "ativo": true,
-      "id": "6aad"
+      "id": "2"
     },
     {
       "nomeProduto": "iPhone 14",
@@ -42,7 +48,7 @@
       "quantidade": 7000,
       "preco": 15000,
       "ativo": true,
-      "id": "5e63"
+      "id": "3"
     },
     {
       "nomeProduto": "iPhone 16.25",
@@ -50,7 +56,23 @@
       "quantidade": "0",
       "preco": 0,
       "ativo": true,
-      "id": "6c09"
+      "id": "4"
+    },
+    {
+      "nomeProduto": "iPhone 21",
+      "codigoBarras": "1234567778888",
+      "quantidade": "200",
+      "preco": 1523.44,
+      "ativo": true,
+      "id": "5"
+    },
+    {
+      "id": "601b",
+      "nomeProduto": "iPhone Motorola",
+      "codigoBarras": "4565467899998",
+      "quantidade": "155",
+      "preco": 23000.45,
+      "ativo": true
     }
   ]
 }

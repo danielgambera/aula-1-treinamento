@@ -44,7 +44,8 @@
                 <input type="text" 
                     class="form-control" 
                     id="quantidade"
-                    formControlName="quantidade">
+                    formControlName="quantidade"
+                    (keydown)="onKeyDownCodigoBarras($event)">
                 @if (produtoForm.get('quantidade')?.touched && produtoForm.get('quantidade')?.errors)
                 {              
                     <div class="form-text text-danger">Quantidade deve ser maior ou igual a zero.</div>
@@ -65,7 +66,7 @@
              </div>
         </div>
     </div>
-    <a class="btn btn-dark" routerLink="/produtos" style="margin-right: 10px;">Voltar</a>
+    <a class="btn btn-secondary" routerLink="/produtos" style="margin-right: 10px;">Voltar</a>
     @if (id)
     {
         <button type="submit" class="btn btn-primary" [disabled]="produtoForm.invalid">Alterar</button>
