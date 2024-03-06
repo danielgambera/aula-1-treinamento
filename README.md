@@ -2,7 +2,7 @@
 
 O projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
-O projeto foi desnvolvido no modo standalone.
+O projeto foi desenvolvido no modo standalone.
 
 ## Servidor de desenvolvimento
 
