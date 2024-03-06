@@ -19,6 +19,8 @@ export const routes: Routes = [
         component: ListagemUsuariosComponent },
     { path:'produtos/cadastrar', 
         component: CadastroProdutosComponent },
+        { path:'produtos/editar/:id', 
+        component: CadastroProdutosComponent },
     { path:'produtos', 
         component: ListagemProdutosComponent },
 

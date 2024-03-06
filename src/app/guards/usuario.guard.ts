@@ -3,7 +3,7 @@ import { CanActivateFn, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 export const UsuarioGuard: CanActivateFn = (route, state) => {
-  const perfil: string = "User";
+  const perfil: string = "Admin";
 
   if (perfil != 'Admin')
   {

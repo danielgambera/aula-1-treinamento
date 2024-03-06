@@ -13,27 +13,65 @@
       "ativo": false
     },
     {
-      "id": "217a",
-      "nome": "Fulano de Miro",
-      "idade": 123,
-      "ativo": true
-    },
-    {
-      "nome": "Murano Wartenio",
-      "idade": 33,
+      "nome": "Apolônio Norberto de Campos Limas",
+      "idade": 3,
       "ativo": true,
-      "id": "8b9c"
+      "id": "3"
     },
     {
-      "nome": "Juninho Platitudes",
-      "idade": 123,
+      "nome": "Gilgamesh Urbano Dantes d'Agora",
+      "idade": 54,
       "ativo": true,
-      "id": "888"
+      "id": "1927"
+    }
+  ],
+  "produtos": [
+    {
+      "nomeProduto": "iPhone 13.5",
+      "codigoBarras": "5012345678900",
+      "quantidade": 5,
+      "preco": 5000.45,
+      "ativo": true,
+      "id": "1"
     },
     {
-      "id": "8c4d",
-      "nome": "Germânio Flores",
-      "idade": 22,
+      "nomeProduto": "iPhone 13.75",
+      "codigoBarras": "2122122122121",
+      "quantidade": 200,
+      "preco": 17000,
+      "ativo": true,
+      "id": "2"
+    },
+    {
+      "nomeProduto": "iPhone 14",
+      "codigoBarras": "1234567890120",
+      "quantidade": 7000,
+      "preco": 15000,
+      "ativo": true,
+      "id": "3"
+    },
+    {
+      "nomeProduto": "iPhone 16.25",
+      "codigoBarras": "5555555556622",
+      "quantidade": "0",
+      "preco": 0,
+      "ativo": true,
+      "id": "4"
+    },
+    {
+      "nomeProduto": "iPhone 21",
+      "codigoBarras": "1234567778888",
+      "quantidade": "200",
+      "preco": 1523.44,
+      "ativo": true,
+      "id": "5"
+    },
+    {
+      "id": "601b",
+      "nomeProduto": "iPhone Motorola",
+      "codigoBarras": "4565467899998",
+      "quantidade": "155",
+      "preco": 23000.45,
       "ativo": true
     }
   ]
