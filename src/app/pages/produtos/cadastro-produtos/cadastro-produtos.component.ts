@@ -6,6 +6,7 @@ import { ProdutosService } from '../../../services/produtos.service';
 import Swal from 'sweetalert2';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { IProduto } from '../../../interfaces/produto';
+import { DecimalPipe, formatNumber } from '@angular/common';
 
 @Component({
     selector: 'app-cadastro-produtos',
@@ -69,6 +70,7 @@ export class CadastroProdutosComponent {
     {
       produto.id = this.id;
     }
+    produto.preco = Math.trunc(produto.preco * 100) / 100;
     this.produtosService.cadastrarProduto(produto).subscribe((result) =>
     {
       Swal.fire({
@@ -99,5 +101,6 @@ onKeyDownCodigoBarras(event: KeyboardEvent) {
   }
   return(true);
 }
+
 
 }

@@ -1,5 +1,5 @@
 @if (id) {
-    <my-title title="Editar Produto"></my-title>
+    <my-title title="Editar Produto '{{id}}'"></my-title>
 }
 @else {
     <my-title title="Cadastrar Produto"></my-title>
@@ -38,6 +38,8 @@
                 }
              </div>
         </div>
+    </div>
+    <div class="row">
         <div class="col">
             <div class="mb-3">
                 <label for="quantidade" class="form-label">Quantidade</label>
