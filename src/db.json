@@ -73,6 +73,22 @@
       "quantidade": "155",
       "preco": 23000.45,
       "ativo": true
+    },
+    {
+      "nomeProduto": "iPhone Google",
+      "codigoBarras": "7777788888888",
+      "quantidade": "1700",
+      "preco": 45632.33,
+      "ativo": true,
+      "id": "4b08"
+    },
+    {
+      "nomeProduto": "Para excluir",
+      "codigoBarras": "1234567890123",
+      "quantidade": "22",
+      "preco": 22.76,
+      "ativo": true,
+      "id": "87b3"
     }
   ]
 }
