@@ -81,14 +81,6 @@
       "preco": 45632.33,
       "ativo": true,
       "id": "4b08"
-    },
-    {
-      "nomeProduto": "Para excluir",
-      "codigoBarras": "1234567890123",
-      "quantidade": "22",
-      "preco": 22.76,
-      "ativo": true,
-      "id": "87b3"
     }
   ]
 }
